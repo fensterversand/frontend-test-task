@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: shopping-cart
+    build: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - /app/node_modules
+    environment:
+      - VITE_API_BASE_URL=https://fakestoreapi.com

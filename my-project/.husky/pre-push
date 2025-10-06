@@ -1,0 +1,4 @@
+cd my-project
+npm run type:check
+npx lint-staged
+npm run test:run
